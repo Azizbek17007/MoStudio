@@ -1,23 +1,12 @@
 from django.shortcuts import render
-from .models import Home, Author, Pricing, Galeria, Contact, About
+from .models import Home,  Pricing,  Contact, About, Category
 
 
 def home_page(request):
     homes = Home.objects.all()
 
     context = {'homes': homes}
-    return render(request, 'home.html', context)
-
-
-
-def galeria_page(request):
-    galerias = Galeria.objects.all()
-    return render(request, 'galleria.html', {'gallerias': galerias})
-
-
-def author_page(request):
-    authors = Author.objects.all()
-    return render(request, 'single.html', {'single': authors})
+    return render(request, 'index.html', context)
 
 def contact_page(request):
     contacts = Contact.objects.all()
@@ -30,6 +19,4 @@ def about_page(request):
 def pricing_page(request):
     pricing = Pricing.objects.all()
     return render(request, 'pricing.html', {'pricing': pricing})
-
-
 
