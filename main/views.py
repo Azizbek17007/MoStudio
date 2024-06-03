@@ -20,3 +20,6 @@ def pricing_page(request):
     pricing = Pricing.objects.all()
     return render(request, 'pricing.html', {'pricing': pricing})
 
+def gallery_page(request):
+    print("Gallery page is being called")
+    return render(request, 'gallery.html')
