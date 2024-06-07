@@ -2,8 +2,7 @@
 {% load static %}
 {% block content %}
 
-<div id="colorlib-main">
-    <section class="ftco-section ftco-no-pt ftco-no-pb">
+ <section class="ftco-section ftco-no-pt ftco-no-pb">
         <div class="container px-md-0">
             <div class="row d-flex no-gutters">
                 <div class="col-md-12 portfolio-wrap">
@@ -40,7 +39,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="static/images/work-2.jpg"
                            class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-2.jpg);">
+                           style="background-image: url({% static 'images/work-2.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -69,7 +68,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-3.jpg"
                            class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-3.jpg);">
+                           style="background-image: url({% static 'images/work-3.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -98,7 +97,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-4.jpg"
                            class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-4.jpg);">
+                           style="background-image: url({% static 'images/work-4.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -127,7 +126,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-5.jpg"
                            class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-5.jpg);">
+                           style="background-image: url({% static 'images/work-5.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -156,7 +155,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-6.jpg"
                            class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-6.jpg);">
+                           style="background-image: url({% static 'images/work-6.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -185,7 +184,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-7.jpg"
                            class="col-md-6 img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-7.jpg);">
+                           style="background-image: url({% static 'images/work-7.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -214,7 +213,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-8.jpg"
                            class="col-md-6 order-md-last img image-popup js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-8.jpg);">
+                           style="background-image: url({% static 'images/work-8.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -243,7 +242,7 @@
                     <div class="row no-gutters align-items-center">
                         <a href="images/work-9.jpg"
                            class="col-md-6 img js-fullheight d-flex align-items-center justify-content-center"
-                           style="background-image: url(static/images/work-9.jpg);">
+                           style="background-image: url({% static 'images/work-9.jpg' %});">
                             <div class="icon d-flex align-items-center justify-content-center">
                                 <span class="fa fa-expand"></span>
                             </div>
@@ -277,7 +276,5 @@
             </div>
         </div>
     </section>
-</div>
-</div>
 
 {% endblock %}
