@@ -7,7 +7,7 @@
         <div class="row d-flex">
             <div class="col-md-6 d-flex">
                 <div class="img d-flex align-self-stretch align-items-center js-fullheight"
-                     style="background-image:url(static/images/about.jpg);">
+                     style="background-image: url({% static 'images/about.jpg' %});">
                 </div>
             </div>
             <div class="col-md-6 d-flex align-items-center">
@@ -17,8 +17,9 @@
                         is a paradisematic country, in which roasted parts of sentences fly into your mouth. It is a
                         paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                     <div class="team-wrap row mt-4">
+                        {% for about in about%}
                         <div class="col-md-4 team">
-                            <div class="img" style="background-image: url(static/images/team-1.jpg);"></div>
+                            <div class="img" style="background-image: url({% static 'images/team-1.jpg' %});"></div>
                             <h3>John Doe</h3>
                             <span>Photographer</span>
                         </div>
@@ -32,6 +33,7 @@
                             <h3>John Flex</h3>
                             <span>Photographer</span>
                         </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

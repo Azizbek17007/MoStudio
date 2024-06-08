@@ -75,16 +75,21 @@
     <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
     <aside id="colorlib-aside" role="complementary" class="js-fullheight">
         <h1 id="colorlib-logo" class="mb-4 mb-md-5"><a href="index-2.html"
-                                                       style="background-image: url(static/images/bg_1.jpg);">Mostudio</a>
+                                                       style="background-image: url({% static 'images/bg_1.jpg' %});">Mostudio</a>
         </h1>
         <nav id="colorlib-main-menu" role="navigation">
             <ul>
-                <li class="colorlib-active"><a href="{%url 'home' %}">Home</a></li>
-                <li><a href="{% url 'gallery'  %}">Gallery</a></li>
+                <li class="colorlib-active"><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'gallery' %}">Gallery</a></li>
                 <li><a href="{% url 'about' %}">About</a></li>
+
                 <li><a href="{% url 'pricing'%}">Pricing</a></li>
+
+                <li><a href="{% url 'pricing' %}">Pricing</a></li>
+
                 <li><a href="{% url 'contact' %}">Contact</a></li>
             </ul>
+
         </nav>
         <div class="colorlib-footer">
             <div class="mb-4">
