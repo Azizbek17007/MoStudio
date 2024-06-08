@@ -24,6 +24,5 @@ def pricing_page(request):
     return render(request, 'pricing.html', {'pricing': pricing_page})
 
 def gallery_page(request):
-    context = {
-    'gallery': Home.objects.all()}
+    context = {'gallery': gallery_page}
     return render(request, 'gallery.html', {'gallery': gallery_page})
